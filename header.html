@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="pt-4 pb-4 bg-yellow-200 w-full">
+        <nav class="flex justify-between items-center px-4 py-2 lg:px-20">
+          <!-- Logo -->
+          <a href="index.html" class="h-20 w-36">
+            <img src="assets/media/technology_computer_repairs_icon_logo_templat_-_Made_with_PosterMyWall-removebg-preview.png" alt="Hire Jahan Logo">
+          </a>
+      
+          <!-- Navigation Menu for Desktop -->
+          <div class="flex items-center">
+            <ul class="hidden lg:flex ms-auto space-x-6 ml-4">
+              <li>
+                <a href="index.html#home1" class="text-xl font-bold text-yellow-900">Home</a>
+              </li>
+              <li>
+                <a href="index.html#work1" class="text-xl font-bold text-yellow-900">Work</a>
+              </li>
+              <li>
+                <a href="index.html#about1" class="text-xl font-bold text-yellow-900">About</a>
+              </li>
+              <li>
+                <a href="index.html#service1" class="text-xl font-bold text-yellow-900">Services</a>
+              </li>
+              <li>
+                <a href="index.html#contact1" class="text-xl font-bold text-yellow-900">Contact</a>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Hamburger Menu Button -->
+          <button id="menu-button" class="lg:hidden focus:outline-none">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6H20M4 12H20M4 18H11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </nav>
+      
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden hidden flex-col items-center space-y-4 px-4 py-2 bg-yellow-200">
+          <ul class="space-y-4">
+            <li>
+              <a href="index.html#home1" class="text-xl font-medium text-yellow-900">Home</a>
+            </li>
+            <li>
+              <a href="index.html#work1" class="text-xl font-medium text-yellow-900">Work</a>
+            </li>
+            <li>
+              <a href="index.html#about1" class="text-xl font-medium text-yellow-900">About</a>
+            </li>
+            <li>
+              <a href="index.html#service1" class="text-xl font-medium text-yellow-900">Services</a>
+            </li>
+            <li>
+              <a href="index.html#contact1" class="text-xl font-medium text-yellow-900">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      
+      <!-- JavaScript for Mobile Menu Toggle -->
+      <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      
+        // Hide mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      </script>
+      
+</body>
+</html>

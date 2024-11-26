@@ -1,0 +1,60 @@
+@keyframes scrolling {
+    0% {
+      transform: translateX(100%); /* Start off the right side of the screen */
+    }
+    100% {
+      transform: translateX(-100%); /* End off the left side of the screen */
+    }
+  }
+  
+  .animate-scroll {
+    display: inline-block;
+    animation: scrolling 25s linear infinite; /* Adjust the timing for the speed */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .overflow-hidden {
+    overflow: hidden; /* Ensures content doesn't overflow outside the container */
+  }
+
+/* 
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #ffcc00; /* Initial yellow color */
+    /* }
+    100% {
+      color: #ff6600;
+    }
+  }
+   */
+  /* .fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .colorChange {
+    animation: colorChange 1s ease-in-out infinite alternate;
+  }  */
+  /* .text-1{
+    text-decoration: underline;
+  } */
+ 
+  /* .aos-animate:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
+  } */
+hr{
+  border: 1px solid rgb(233, 168, 57);
+}
+
+  
